@@ -1,4 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const AboutPage = () => {
     return (
         <div className="flex flex-col items-center text-xl">
