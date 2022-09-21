@@ -9,23 +9,21 @@ import "../styles/globals.css";
 import SideBar from "../components/navbar";
 import { AppProps } from "next/app";
 import React from "react";
+import theme from '../styles/theme';
+import ToggleColorMode from "../components/darkModeButton";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const desc = "Pick the best fighter in the Cobra Kai and Karate Kid Verse";
   const title = "Best KK and CK fighter poll site";
   const imageMeta = "https://thekaratekid.fandom.com/wiki/Cobra_Kai_Dojo?file=Cobra_kai_logo_vector.svg";
-  const { colorMode, toggleColorMode } = useColorMode();
 
 
   return (
-    <ChakraProvider>
-      <div>
-        <Button onClick={toggleColorMode}>
-          Toggle Mode {colorMode}
-        </Button>
-        <SideBar />
-        <Component {...pageProps} />
-      </div>
+    <ChakraProvider theme={theme}>
+      <ColorModeScript initialColorMode={theme.config.initialColorMode} />
+      <ToggleColorMode />
+      <SideBar />
+      <Component {...pageProps} />
     </ChakraProvider>
   );
 
