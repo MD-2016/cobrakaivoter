@@ -21,9 +21,11 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
       <ColorModeScript initialColorMode={theme.config.initialColorMode} />
-      <ToggleColorMode />
-      <SideBar />
-      <Component {...pageProps} />
+      <SideBar>
+        <ToggleColorMode />
+        <Component {...pageProps} />
+      </SideBar>
+
     </ChakraProvider>
   );
 

@@ -1,12 +1,14 @@
 //import { trpc } from "@/utils/trpc";
 import type React from "react";
+import { Box, Flex } from "@chakra-ui/react";
 //import { inferQueryResponse } from "./api/trpc/[trpc]";
 
 import Image from "next/image";
 import Link from "next/link";
 import Head from "next/head";
 import { usePlausible } from "next-plausible";
-import SideBar from "../components/navbar";
+import { Container } from "@chakra-ui/react";
+import { Center } from "@chakra-ui/react";
 
 
 const btn =
@@ -15,13 +17,14 @@ const btn =
 export default function Home() {
 
   return (
-    <html>
-      <head>
-      </head>
-      <body>
-        <p>Welcome to the Karate Kid / Cobra Kai voting app. Here you will vote on your favorite fighter from the KK / CK universe and results will be ranked.</p>
+    <body>
+      <Box display="flex" alignItems="center" justifyContent="space-between">
+        Box with Flex props
+      </Box>
 
-      </body>
-    </html>
+      <Flex align="center" justify="center">
+        Flex Container
+      </Flex>
+    </body>
   );
 }
