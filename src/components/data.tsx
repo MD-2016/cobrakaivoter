@@ -1,5 +1,12 @@
 export const links = {
     "EFK": {
+        "sensei": {
+            "ID": 5,
+            "bio": "The two time former All Valley champion who reopened Cobra Kai and lead his students to victory in the All Valley. He later lost his dojo and opened a new one under the new name Eagle Fang Karate. He would merge his students with Daniel LaRusso's Miyagi-Do Karate to take on Cobra Kai under John Kreese and Terry Silver.",
+            "name": "Johnny Lawrence",
+            "rivals": "John Kreese, Terry Silver",
+            "friends": "Bobby Brown, Dutch, Jimmy, Tommy, Miguel Diaz, Daniel LaRusso, Chozen Toguchi, Miyagi-Do fighters, Eagle Fang fighters",
+        },
         "students": {
             "Miguel": {
                 "ID": 1,
@@ -27,13 +34,12 @@ export const links = {
                 "bio": "Came in by Season 4 and joined Eagle Fang karate and competed in the All Valley being the only female fighter of Eagle Fang. Later joins Topanga Karate and Cobra Kai.",
                 "name": "Devon Lee",
                 "rivals": "Terry Silver, Kyler Park, Kim Da-Eun",
-                "friends": "Johnny Lawrence, Tory Nichols, Bert, Nathaniel"
-            }
-
+                "friends": "Johnny Lawrence, Tory Nichols, Bert, Nathaniel",
+            },
         },
         "CK": {
             "students": {
-
+                ""
             }
         },
         "MD": {
