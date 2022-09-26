@@ -1,4 +1,6 @@
 import { ReactNode } from 'react';
+import bosai from '../../public/resources/pictures/dojo/miyagiDo/MiyagiDo.jpg';
+import cobra from '../../public/resources/pictures/dojo/cobrakai/CobraKaiLogo.jpg';
 import { useColorMode } from '@chakra-ui/color-mode';
 import {
     Box,
@@ -16,10 +18,12 @@ import {
     useDisclosure,
     useColorModeValue,
     Stack,
+    Image,
+    ScaleFade
 } from '@chakra-ui/react';
-import { HamburgerIcon, CloseIcon, SunIcon, MoonIcon } from '@chakra-ui/icons';
+import { HamburgerIcon, CloseIcon, SunIcon, MoonIcon, ChevronDownIcon } from '@chakra-ui/icons';
 
-const Links = ['Dojos', 'Vote', 'Results'];
+const Links = ['Vote', 'Results'];
 
 
 
@@ -38,7 +42,7 @@ const NavLink = ({ children }: { children: ReactNode }) => (
 );
 
 export default function Simple() {
-    const { isOpen, onOpen, onClose } = useDisclosure();
+    const { isOpen, onOpen, onClose, onToggle } = useDisclosure();
     const { colorMode, toggleColorMode } = useColorMode();
     return (
         <>
@@ -52,7 +56,10 @@ export default function Simple() {
                         onClick={isOpen ? onClose : onOpen}
                     />
                     <HStack spacing={8} alignItems={'center'}>
-                        <Box>Logo</Box>
+                        <Box>
+
+                            {colorMode === 'light' ? <Image src={bosai.src} boxSize='50px' alt='Miyagi Do' /> : <Image src={cobra.src} boxSize='50px' alt='Cobra Kai' />}
+                        </Box>
                         <HStack
                             as={'nav'}
                             spacing={4}
@@ -60,6 +67,17 @@ export default function Simple() {
                             {Links.map((link) => (
                                 <NavLink key={link}>{link}</NavLink>
                             ))}
+                            <Menu>
+                                <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
+                                    Dojos
+                                </MenuButton>
+                                <MenuList>
+                                    <MenuItem>Cobra Kai</MenuItem>
+                                    <MenuItem>Eagle Fang</MenuItem>
+                                    <MenuItem>Miyagi-Do</MenuItem>
+                                    <MenuItem>Unknown</MenuItem>
+                                </MenuList>
+                            </Menu>
                         </HStack>
                     </HStack>
                     <Flex alignItems={'center'}>
@@ -81,7 +99,9 @@ export default function Simple() {
                 ) : null}
             </Box>
 
-            <Box p={4}>Main Content Here</Box>
+            <Box>
+                main
+            </Box>
         </>
     );
 }

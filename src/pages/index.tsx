@@ -18,13 +18,6 @@ export default function Home() {
 
   return (
     <body>
-      <Box display="flex" alignItems="center" justifyContent="space-between">
-        Box with Flex props
-      </Box>
-
-      <Flex align="center" justify="center">
-        Flex Container
-      </Flex>
     </body>
   );
 }
