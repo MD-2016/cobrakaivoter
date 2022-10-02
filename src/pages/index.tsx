@@ -17,7 +17,6 @@ const btn =
 export default function Home() {
 
   return (
-    <body>
-    </body>
+    <p>yes</p>
   );
-}
+};

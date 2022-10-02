@@ -1,3 +1,33 @@
+/*
+//Eagle Fang pics
+import johnny from "../../public/resources/pictures/dojo/eaglefang/Johnny.jpg";
+import aisha from "../../public/resources/pictures/dojo/eaglefang/Aisha.jpg";
+import bert from "../../public/resources/pictures/dojo/eaglefang/Bert.jpg";
+import devon from "../../public/resources/pictures/dojo/eaglefang/Devon.jpg";
+import mitch from "../../public/resources/pictures/dojo/eaglefang/Mitch.jpg";
+import miguel from "../../public/resources/pictures/dojo/eaglefang/Miguel.jpg";
+
+//Miyagi-Do pics
+import miyagi from "../../public/resources/pictures/dojo/miyagiDo/Miyagi.jpg";
+import daniel from "../../public/resources/pictures/dojo/miyagiDo/Daniel.jpg";
+import chozen from "../../public/resources/pictures/dojo/miyagiDo/Chozen.jpg";
+import sato from "../../public/resources/pictures/dojo/miyagiDo/Sato.jpg";
+import sam from "../../public/resources/pictures/dojo/miyagiDo/Samantha.jpg";
+import eli from "../../public/resources/pictures/dojo/miyagiDo/Eli.jpg";
+import demetri from "../../public/resources/pictures/dojo/miyagiDo/Demetri.jpg";
+import abe from "../../public/resources/pictures/dojo/miyagiDo/Abe.jpg";
+import chris from "../../public/resources/pictures/dojo/miyagiDo/Chris.jpg";
+import nate from " ../../public/resources/pictures/dojo/miyagiDo/Nate.jpg";
+
+//cobra kai pics
+import kreese from "../../public/resources/pictures/dojo/cobrakai/Kreese.jpg";
+import kim from "../../public/resources/pictures/dojo/cobrakai/Kim.jpg";
+import terry from "../../public/resources/pictures/dojo/cobrakai/TerrySilver.jpg";
+import tory from "../../public/resources/pictures/dojo/cobrakai/ToryNichols.jpg";
+import piper from "../../public/resources/pictures/dojo/cobrakai/Piper.jpg";
+import edwin from "../../public/resources/pictures/dojo/cobrakai/Edwin.jpg";
+*/
+
 export const links = {
     "EFK": {
         "sensei": {
@@ -7,6 +37,7 @@ export const links = {
                 "name": "Johnny Lawrence",
                 "rivals": "John Kreese, Terry Silver",
                 "friends": "Bobby Brown, Dutch, Jimmy, Tommy, Miguel Diaz, Daniel LaRusso, Chozen Toguchi, Miyagi-Do fighters, Eagle Fang fighters",
+                "pic": "/resources/pictures/dojo/eaglefang/Johnny.jpg",
             },
         },
         "students": {
@@ -16,13 +47,15 @@ export const links = {
                 "name": "Miguel Diaz",
                 "rivals": "Mitch, Kyler Park, John Kreese, Kenny Payne, Terry Silver",
                 "friends": "Eli Moskowitz, Demetri Alexopoulos, Johnny Lawrence, Daniel LaRusso, Samantha LaRusso, Devon Lee, Bert, Robby Keene, Tory Nichols, Chozen Toguchi",
+                "pic": "/resources/pictures/dojo/eaglefang/Miguel.jpg",
             },
             "Mitch": {
                 "ID": 2,
                 "bio": "Formerly member of the Cobra Kai and Eagle Fang Karate Dojos. Ended up portraying his friends and joined Cobra Kai. His history keeps him more with Cobra Kai and Eagle Fang than Cobra Kai under Kreese / Silver. Competed in both All Valleys.",
                 "name": "Mitch",
                 "rivals": "Chris, Eli Moskowitz, Bert, Miguel Diaz, Samantha LaRusso, Johnny Lawrence, Daniel LaRusso, Chozen Toguchi, Robby Keene, John Kreese, Devon Lee",
-                "friends": "Kyler Park, Kenny Payne, Terry Silver"
+                "friends": "Kyler Park, Kenny Payne, Terry Silver",
+                "pic": "/resources/pictures/dojo/eaglefang/Mitch.jpg",
             },
             "Bert": {
                 "ID": 3,
@@ -30,6 +63,7 @@ export const links = {
                 "name": "Bert",
                 "rivals": "Tory Nichols, John Kreese, Terry Silver, Kyler Park, Kenny Payne, Robby Keene, Mitch",
                 "friends": "Nathaniel, Eli Moskowitz, Stingray, Johnny Lawrence, Daniel LaRusso, Chozen Toguchi, Samantha LaRusso, Chris, Demetri Alexopoulos, Robby Keene, Miguel Diaz, Devon Lee",
+                "pic": "/resources/pictures/dojo/eaglefang/Bert.jpg",
             },
             "Devon": {
                 "ID": 4,
@@ -37,6 +71,7 @@ export const links = {
                 "name": "Devon Lee",
                 "rivals": "Terry Silver, Kyler Park, Kim Da-Eun",
                 "friends": "Johnny Lawrence, Tory Nichols, Bert, Nathaniel",
+                "pic": "/resources/pictures/dojo/eaglefang/Devon.jpg",
             },
             "Aisha": {
                 "ID": 25,
@@ -44,6 +79,7 @@ export const links = {
                 "name": "Aisha Robinson",
                 "rivals": "Robby Keene, Chris",
                 "friends": "Samantha LaRusso, Daniel LaRusso, Miguel Diaz, Eli Moskowitz, Tory Nichols",
+                "pic": "/resources/pictures/dojo/eaglefang/Aisha.jpg",
             },
         },
     },
@@ -55,6 +91,7 @@ export const links = {
                 "name": "John Kreese",
                 "rivals": "Miyagi, Daniel LaRusso, Johnny Lawrence, Terry Silver, Miyagi-Do, Eagle Fang",
                 "friends": "Kim Sun-Yung, Tory Nichols",
+                "pic": "/resources/pictures/dojo/cobrakai/Kreese.jpg",
             },
             "Terry": {
                 "ID": 12,
@@ -62,6 +99,7 @@ export const links = {
                 "name": "Terry Silver",
                 "rivals": "Daniel LaRusso, Miyagi, Johnny Lawrence, John Kreese, Miguel Diaz, Mike Barnes, Chozen Toguchi, Miyagi-Do, Eagle Fang",
                 "friends": "Kim Sun-Yung, Kim Da-Eun",
+                "pic": "/resources/pictures/dojo/cobrakai/TerrySilver.jpg",
             },
             "Kim": {
                 "ID": 13,
@@ -69,6 +107,7 @@ export const links = {
                 "name": "Kim Da-Eun",
                 "rivals": "Tory Nichols, Devon Lee, Miyagi-Do, Eagle Fang",
                 "friends": "Kim Sun-Yung, John Kreese, Terry Silver, Cobra Kai",
+                "pic": "/resources/pictures/dojo/cobrakai/Kim.jpg",
             },
             "KimSun": {
                 "ID": 14,
@@ -76,6 +115,7 @@ export const links = {
                 "name": "Kim Sun-Yung",
                 "rivals": "Sato Toguchi",
                 "friends": "Kim Da-Eun, John Kreese, Terry Silver",
+                "pic": "/resources/pictures/dojo/cobrakai/MasterKim.jpg",
             },
         },
         "students": {
@@ -85,6 +125,7 @@ export const links = {
                 "name": "Tory Nichols",
                 "rivals": "Samanatha LaRusso, Kim Da-Eun, Terry Silver, Miyagi-Do, Eagle Fang",
                 "friends": "Robby Keene, Devon Lee, Kyler Park, Kenny Payne, John Kreese",
+                "pic": "/resources/pictures/dojo/cobrakai/ToryNichols.jpg",
             },
             "Kyler": {
                 "ID": 7,
@@ -92,6 +133,7 @@ export const links = {
                 "name": "Kyler Park",
                 "rivals": "Miguel Diaz, Eli Moskowitz, Demetri Alexopoulos, Johnny Lawrence, Robby Keene, Terry Silver",
                 "friends": "Edwin, Tory Nichols, Kenny Payne, Terry Silver, Piper Elswith",
+                "pic": "/resources/pictures/dojo/cobrakai/Kyler.jpg",
             },
             "Kenny": {
                 "ID": 8,
@@ -99,6 +141,7 @@ export const links = {
                 "name": "Kenny Payne",
                 "rivals": "Anthony LaRusso, Bert, Nathaniel, Miguel Diaz, Eli Moskowitz, Robby Keene (s5)",
                 "friends": "Kyler Park, John Kreese, Terry Silver, Tory Nichols",
+                "pic": "/resources/pictures/dojo/cobrakai/Kenny.jpg",
             },
             "Edwin": {
                 "ID": 9,
@@ -106,6 +149,7 @@ export const links = {
                 "name": "Edwin",
                 "rivals": "Demetri Alexopoulos, Samantha LaRusso, Eli Moskowitz, Miyagi-Do, Eagle Fang",
                 "friends": "Kyler Park, John Kreese, Terry Silver, Big Red, Stingray, Tory Nichols, Kenny Payne",
+                "pic": "/resources/pictures/dojo/cobrakai/Edwin.jpg",
             },
             "Piper": {
                 "ID": 10,
@@ -113,6 +157,7 @@ export const links = {
                 "name": "Piper Elswith",
                 "rivals": "Samantha LaRusso, Miyagi-Do, Eagle Fang",
                 "friends": "Kyler Park, John Kreese, Terry Silver, Cobra Kai",
+                "pic": "/resources/pictures/dojo/cobrakai/Piper.jpg",
             },
 
         },
@@ -125,6 +170,7 @@ export const links = {
                 "name": "Nariyoshi Miyagi",
                 "rivals": "Mike Barnes, Terry Silver, John Kreese, Johnny Lawrence, Paul Dugan",
                 "friends": "Daniel LaRusso, Sato Yoguchi",
+                "pic": "/resources/pictures/dojo/miyagiDo/Miyagi.jpg",
             },
             "Sato": {
                 "ID": 16,
@@ -132,6 +178,7 @@ export const links = {
                 "name": "Sato Toguchi",
                 "rivals": "Kim Sun-Yung",
                 "friends": "Miyagi, Chozen Toguchi, Daniel LaRusso",
+                "pic": "/resources/pictures/dojo/miyagiDo/Sato.jpg",
             },
             "Chozen": {
                 "ID": 17,
@@ -139,6 +186,7 @@ export const links = {
                 "name": "Chozen Toguchi",
                 "rivals": "Terry Silver, Kim Da-Eun, Cobra Kai",
                 "friends": "Sato Toguchi, Daniel LaRusso, Johnny Lawrence, Miyagi-Do, Eagle Fang",
+                "pic": "/resources/pictures/dojo/miyagiDo/Chozen.jpg",
             },
             "Daniel": {
                 "ID": 18,
@@ -146,6 +194,7 @@ export const links = {
                 "name": "Daniel LaRusso",
                 "rivals": "John Kreese, Terry Silver, Cobra Kai",
                 "friends": "Johnny Lawrence, Samantha LaRusso, Sato Toguchi, Chozen Toguchi, Miyagi-Do, Eagle Fang",
+                "pic": "/resources/pictures/dojo/miyagiDo/Daniel.jpg",
             },
         },
         "students": {
@@ -155,6 +204,7 @@ export const links = {
                 "name": "Samantha LaRusso",
                 "rivals": "Tory Nichols, Kyler Park, John Kreese, Kim Da-Eun, Cobra Kai",
                 "friends": "Aisha Robinson, Johnny Lawrence, Chozen Toguchi, Demetri Alexopoulos, Chris, Eli Moskowitz, Robby Keene, Miyagi-Do, Eagle Fang",
+                "pic": "/resources/pictures/dojo/miyagiDo/Samantha.jpg",
             },
             "Eli": {
                 "ID": 20,
@@ -162,12 +212,14 @@ export const links = {
                 "name": "Eli Moskowitz",
                 "rivals": "Kyler Park, John Kreese, Terry Silver, Kenny Payne, Cobra Kai",
                 "friends": "Demetri Alexopoulos, Miguel Diaz, Daniel LaRusso, Robby Keene, Samantha LaRusso, Tory Nichols, Chozen Toguchi, Miyagi-Do, Eagle Fang.",
+                "pic": "/resources/pictures/dojo/miyagiDo/Eli.jpg",
             },
             "Demetri": {
                 "ID": 21,
                 "bio": "A quiet and bullied student who would eventually join Miyagi-Do and compete in the 2019 All Valley.",
                 "name": "Demetri Alexopoulos",
                 "rivals": "Kyler Park, Tory Nichols, Terry Silver, John Kreese, Cobra Kai",
+                "pic": "/resources/pictures/dojo/miyagiDo/Demetri.jpg",
             },
             "Robby": {
                 "ID": 22,
@@ -175,6 +227,7 @@ export const links = {
                 "name": "Robby Keene",
                 "rivals": "John Kreese, Terry Silver, Kyler Park, Kim Da-Eun",
                 "friends": "Miguel Diaz, Eli Moskowitz, Demetri Alexopoulos, Samantha LaRusso, Kenny Payne, Daniel LaRusso, Chozen Toguchi, Tory Nichols",
+                "pic": "/resources/pictures/dojo/miyagiDo/Robby.jpg",
             },
             "Chris": {
                 "ID": 23,
@@ -182,6 +235,7 @@ export const links = {
                 "name": "Chris",
                 "rivals": "Mitch, John Kreese, Terry Silver. Kyler Park, Kenny Payne, Cobra Kai",
                 "friends": "Demetri Alexopoulos, Nathaniel, Daniel LaRusso, Chozen Toguchi, Johnny Lawrence, Samantha LaRusso, Miguel Diaz, Eli Moskowitz, Robby Keene, Miyagi-Do, Eagle Fang",
+                "pic": "/resources/pictures/dojo/miyagiDo/Chris.jpg",
             },
             "Nathaniel": {
                 "ID": 24,
@@ -189,6 +243,7 @@ export const links = {
                 "name": "Nathaniel",
                 "rivals": "John Kreese, Terry Silver, Kenny Payne, Cobra Kai",
                 "friends": "Bert, Chris, Demetri Alexopoulos, Miyagi-Do, Eagle Fang",
+                "pic": "/resources/pictures/dojo/miyagiDo/Nate.jpg",
             },
         },
     },
@@ -199,6 +254,7 @@ export const links = {
             "name": "Mike Barnes",
             "rivals": "Terry Silver, John Kreese, Cobra Kai",
             "friends": "Daniel LaRusso (possibly), Johnny Lawrence (possibly), Chozen Toguchi (possibly)",
+            "pic": "/resources/pictures/dojo/cobrakai/MikeBarnes.jpg",
         },
     },
 }
