@@ -9,6 +9,7 @@ import "../styles/globals.css";
 import SideBar from "../components/navbar";
 import { AppProps } from "next/app";
 import React from "react";
+import Home from "../pages/index";
 import theme from '../styles/theme';
 import ToggleColorMode from "../components/darkModeButton";
 
@@ -22,7 +23,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <ChakraProvider theme={theme}>
       <ColorModeScript initialColorMode={theme.config.initialColorMode} />
       <SideBar />
-
+      <Home />
 
     </ChakraProvider>
   );

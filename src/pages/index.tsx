@@ -2,7 +2,7 @@
 import type React from "react";
 import { Box, Flex } from "@chakra-ui/react";
 //import { inferQueryResponse } from "./api/trpc/[trpc]";
-
+import { links } from "../components/data";
 import Image from "next/image";
 import Link from "next/link";
 import Head from "next/head";
@@ -17,6 +17,31 @@ const btn =
 export default function Home() {
 
   return (
-    <p>yes</p>
+    <div className="test">
+      <table>
+        <tbody>
+          <tr>
+            <th>Name</th>
+            <th>Dojo</th>
+            <th>Friends</th>
+            <th>Rivals</th>
+            <th>pic</th>
+            <th>bio</th>
+          </tr>
+          {links.EFK.students.map((item, key) => {
+            return (
+              <tr key={key}>
+                <td>{item.name}</td>
+                <td>{item.dojo}</td>
+                <td>{item.friends}</td>
+                <td>{item.rivals}</td>
+                <td><img src={item.pic} width="100px" height="100px" alt={item.name} /></td>
+                <td>{item.bio}</td>
+              </tr>
+            )
+          })}
+        </tbody>
+      </table>
+    </div>
   );
 };

@@ -98,10 +98,6 @@ export default function Simple() {
                     </Box>
                 ) : null}
             </Box>
-
-            <Box>
-                main
-            </Box>
         </>
     );
 }
