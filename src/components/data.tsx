@@ -272,8 +272,8 @@ export const links = {
             },
         ],
     },
-    "WC": {
-        "Mike": {
+    "WC": [
+        {
             "ID": 26,
             "bio": "The former Karate Bad Boy during the 80s who was brought in my Terry Silver to help defeat Miyagi and Daniel in the All Valley. He eventually loses to Daniel and ends up being banned from karate. He would go on to work odd jobs until he met his future wife and father in law and would run a furniture store. He would later assist Daniel in stopping Terry Silver from running Cobra Kai. He is a wild card because no one knows which side he would help with.",
             "name": "Mike Barnes",
@@ -282,5 +282,5 @@ export const links = {
             "pic": "/resources/pictures/dojo/cobrakai/MikeBarnes.jpg",
             "dojo": "Unknown",
         },
-    },
+    ],
 }

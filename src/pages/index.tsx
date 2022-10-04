@@ -28,6 +28,18 @@ export default function Home() {
             <th>pic</th>
             <th>bio</th>
           </tr>
+          {links.EFK.sensei.map((item, key) => {
+            return (
+              <tr key={key}>
+                <td>{item.name}</td>
+                <td>{item.dojo}</td>
+                <td>{item.friends}</td>
+                <td>{item.rivals}</td>
+                <td><img src={item.pic} width="100%" height="100%" alt={item.name} /></td>
+                <td>{item.bio}</td>
+              </tr>
+            )
+          })}
           {links.EFK.students.map((item, key) => {
             return (
               <tr key={key}>
@@ -35,7 +47,67 @@ export default function Home() {
                 <td>{item.dojo}</td>
                 <td>{item.friends}</td>
                 <td>{item.rivals}</td>
-                <td><img src={item.pic} width="100px" height="100px" alt={item.name} /></td>
+                <td><img src={item.pic} width="100%" height="100%" alt={item.name} /></td>
+                <td>{item.bio}</td>
+              </tr>
+            )
+          })}
+          {links.CK.sensei.map((item, key) => {
+            return (
+              <tr key={key}>
+                <td>{item.name}</td>
+                <td>{item.dojo}</td>
+                <td>{item.friends}</td>
+                <td>{item.rivals}</td>
+                <td><img src={item.pic} width="100%" height="100%" alt={item.name} /></td>
+                <td>{item.bio}</td>
+              </tr>
+            )
+          })}
+          {links.CK.students.map((item, key) => {
+            return (
+              <tr key={key}>
+                <td>{item.name}</td>
+                <td>{item.dojo}</td>
+                <td>{item.friends}</td>
+                <td>{item.rivals}</td>
+                <td><img src={item.pic} width="100%" height="100%" alt={item.name} /></td>
+                <td>{item.bio}</td>
+              </tr>
+            )
+          })}
+          {links.MD.sensei.map((item, key) => {
+            return (
+              <tr key={key}>
+                <td>{item.name}</td>
+                <td>{item.dojo}</td>
+                <td>{item.friends}</td>
+                <td>{item.rivals}</td>
+                <td><img src={item.pic} width="100%" height="100%" alt={item.name} /></td>
+                <td>{item.bio}</td>
+              </tr>
+            )
+          })}
+          {links.MD.students.map((item, key) => {
+            return (
+              <tr key={key}>
+                <td>{item.name}</td>
+                <td>{item.dojo}</td>
+                <td>{item.friends}</td>
+                <td>{item.rivals}</td>
+                <td><img src={item.pic} width="100%" height="100%" alt={item.name} /></td>
+                <td>{item.bio}</td>
+              </tr>
+            )
+          })}
+          {links.WC.map((item, key) => {
+            return (
+              <tr key={key}>
+                <td>{item.name}</td>
+                <td>{item.dojo}</td>
+                <td>{item.friends}</td>
+                <td>{item.rivals}</td>
+                <td><img src={item.pic} width="100%" height="100%" alt={item.name} /></td>
                 <td>{item.bio}</td>
               </tr>
             )
