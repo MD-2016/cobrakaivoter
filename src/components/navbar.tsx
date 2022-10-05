@@ -23,11 +23,14 @@ import {
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon, SunIcon, MoonIcon, ChevronDownIcon } from '@chakra-ui/icons';
 
-const Links = ['Vote', 'Results'];
+const Links = [
+    { name: "Vote", href: "/vote" },
+    { name: "Results", href: "/results" },
+    { name: "About", href: "/about" },
+];
 
 
-
-const NavLink = ({ children }: { children: ReactNode }) => (
+/*const NavLink = ({ children }: { children: ReactNode }) => (
     <Link
         px={2}
         py={1}
@@ -36,10 +39,30 @@ const NavLink = ({ children }: { children: ReactNode }) => (
             textDecoration: 'none',
             bg: useColorModeValue('gray.200', 'gray.700'),
         }}
-        href={'#'}>
+        href='#'>
         {children}
     </Link>
-);
+); 
+*/
+
+const NavLink = () => {
+    {
+        Links.map((item) => (
+            <Link
+                px={2}
+                py={1}
+                rounded={'md'}
+                _hover={{
+                    textDecoration: 'none',
+                    bg: useColorModeValue('gray.200', 'gray.700'),
+                }}
+                href={item.href}
+            >
+                {item.name}
+            </Link>
+        ))
+    }
+};
 
 export default function Simple() {
     const { isOpen, onOpen, onClose, onToggle } = useDisclosure();
@@ -75,7 +98,7 @@ export default function Simple() {
                                     <MenuItem>Cobra Kai</MenuItem>
                                     <MenuItem>Eagle Fang</MenuItem>
                                     <MenuItem>Miyagi-Do</MenuItem>
-                                    <MenuItem>Unknown</MenuItem>
+                                    <MenuItem>Wild Card</MenuItem>
                                 </MenuList>
                             </Menu>
                         </HStack>

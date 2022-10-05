@@ -6,11 +6,15 @@ import type { AppRouter } from "../server/router";
 import type { AppType } from "next/dist/shared/lib/utils";
 import superjson from "superjson";
 import "../styles/globals.css";
-import SideBar from "../components/navbar";
+import NavBar from "../components/navbar";
 import { AppProps } from "next/app";
 import React from "react";
+import About from '../pages/about';
 import Home from "../pages/index";
+import Vote from "../pages/vote";
+import Results from '../pages/results';
 import theme from '../styles/theme';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ToggleColorMode from "../components/darkModeButton";
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -22,8 +26,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
       <ColorModeScript initialColorMode={theme.config.initialColorMode} />
-      <SideBar />
-      <Home />
+      <NavBar />
 
     </ChakraProvider>
   );
