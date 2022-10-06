@@ -15,7 +15,7 @@ import { Center } from "@chakra-ui/react";
 
 const Home = () => {
   return (
-    <p>test</p>
+    <p>home</p>
   )
 };
 

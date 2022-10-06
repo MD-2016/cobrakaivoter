@@ -14,7 +14,7 @@ import Home from "../pages/index";
 import Vote from "../pages/vote";
 import Results from '../pages/results';
 import theme from '../styles/theme';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import ToggleColorMode from "../components/darkModeButton";
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -26,8 +26,17 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
       <ColorModeScript initialColorMode={theme.config.initialColorMode} />
-      <NavBar />
-
+      <Router>
+        <NavBar />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/vote' element={<Vote />} />
+          <Route path='/results' element={<Results />} />
+          <Route path='/about' element={<About />} />
+        </Routes>
+      </Router>
+      <Home />
+      <Component {...pageProps} />
     </ChakraProvider>
   );
 
