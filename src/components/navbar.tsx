@@ -2,11 +2,9 @@ import { ReactElement, ReactNode } from 'react';
 import bosai from '../../public/resources/pictures/dojo/miyagiDo/MiyagiDo.jpg';
 import cobra from '../../public/resources/pictures/dojo/cobrakai/CobraKaiLogo.jpg';
 import { useColorMode } from '@chakra-ui/color-mode';
-import NextLink from 'next/link';
 import {
     Box,
     Flex,
-    Avatar,
     HStack,
     Link,
     IconButton,
@@ -15,13 +13,10 @@ import {
     MenuButton,
     MenuList,
     MenuItem,
-    MenuDivider,
     useDisclosure,
     useColorModeValue,
     Stack,
     Image,
-    ScaleFade,
-    LinkProps
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon, SunIcon, MoonIcon, ChevronDownIcon } from '@chakra-ui/icons';
 
@@ -29,6 +24,7 @@ import { HamburgerIcon, CloseIcon, SunIcon, MoonIcon, ChevronDownIcon } from '@c
 
 interface LinksProp {
     title: string,
+    href: string,
     children?: ReactNode,
 };
 
@@ -57,10 +53,11 @@ const Links = [
 ); */
 
 //{links.map(link => (<Link className={link.className} activeClassName={link.activeClassName} to={link.to}>{link.name}</Link> ))}
-function NavLink(props: LinksProp) {
+function NavLinks(props: LinksProp) {
     return (
 
         <Link
+
             px={2}
             py={1}
             rounded={'md'}
@@ -68,6 +65,7 @@ function NavLink(props: LinksProp) {
                 textDecoration: 'none',
                 bg: useColorModeValue('gray.200', 'gray.700'),
             }}
+            href={props.href}
         >
             {props.title}
         </Link>
@@ -97,11 +95,11 @@ export default function Simple() {
                             as={'nav'}
                             spacing={4}
                             display={{ base: 'none', md: 'flex' }}>
-                            {Links.map((item) => {
+                            {Links.map((item, i) => {
                                 return (
-                                    <NextLink href={item.to} passHref>
-                                        <a><NavLink title={item.title}>{item.title}</NavLink></a>
-                                    </NextLink>
+
+                                    <NavLinks key={i} title={item.title} href={item.to}>{item.title}</NavLinks>
+
                                 )
                             })}
                             <Menu>
@@ -109,10 +107,10 @@ export default function Simple() {
                                     Dojos
                                 </MenuButton>
                                 <MenuList>
-                                    <MenuItem>Cobra Kai</MenuItem>
-                                    <MenuItem>Eagle Fang</MenuItem>
-                                    <MenuItem>Miyagi-Do</MenuItem>
-                                    <MenuItem>Wild Card</MenuItem>
+                                    <MenuItem><a href="/dojo/cobrakai">Cobra Kai</a></MenuItem>
+                                    <MenuItem><a href="/dojo/eaglefang">Eagle Fang</a></MenuItem>
+                                    <MenuItem><a href="/dojo/miyagido">Miyagi-Do</a></MenuItem>
+                                    <MenuItem><a href="/dojo/wildcard">Wild Card</a></MenuItem>
                                 </MenuList>
                             </Menu>
                         </HStack>
@@ -128,11 +126,11 @@ export default function Simple() {
                 {isOpen ? (
                     <Box pb={4} display={{ md: 'none' }}>
                         <Stack as={'nav'} spacing={4}>
-                            {Links.map((item) => {
+                            {Links.map((item, i) => {
                                 return (
-                                    <NextLink href={item.to} passHref>
-                                        <a><NavLink title={item.title}>{item.title}</NavLink></a>
-                                    </NextLink>
+
+                                    <NavLinks key={i} title={item.title} href={item.to}>{item.title}</NavLinks>
+
                                 )
                             })}
                         </Stack>
