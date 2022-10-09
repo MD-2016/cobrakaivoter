@@ -2,6 +2,7 @@ import { ReactElement, ReactNode } from 'react';
 import bosai from '../../public/resources/pictures/dojo/miyagiDo/MiyagiDo.jpg';
 import cobra from '../../public/resources/pictures/dojo/cobrakai/CobraKaiLogo.jpg';
 import { useColorMode } from '@chakra-ui/color-mode';
+import NextLink from 'next/link';
 import {
     Box,
     Flex,
@@ -28,7 +29,6 @@ import { HamburgerIcon, CloseIcon, SunIcon, MoonIcon, ChevronDownIcon } from '@c
 
 interface LinksProp {
     title: string,
-    href: string,
     children?: ReactNode,
 };
 
@@ -68,7 +68,6 @@ function NavLink(props: LinksProp) {
                 textDecoration: 'none',
                 bg: useColorModeValue('gray.200', 'gray.700'),
             }}
-            href={props.href}
         >
             {props.title}
         </Link>
@@ -100,7 +99,9 @@ export default function Simple() {
                             display={{ base: 'none', md: 'flex' }}>
                             {Links.map((item) => {
                                 return (
-                                    <NavLink title={item.title} href={item.to}>{item.title}</NavLink>
+                                    <NextLink href={item.to} passHref>
+                                        <a><NavLink title={item.title}>{item.title}</NavLink></a>
+                                    </NextLink>
                                 )
                             })}
                             <Menu>
@@ -129,7 +130,9 @@ export default function Simple() {
                         <Stack as={'nav'} spacing={4}>
                             {Links.map((item) => {
                                 return (
-                                    <NavLink title={item.title} href={item.to} > {item.title}</NavLink>
+                                    <NextLink href={item.to} passHref>
+                                        <a><NavLink title={item.title}>{item.title}</NavLink></a>
+                                    </NextLink>
                                 )
                             })}
                         </Stack>
