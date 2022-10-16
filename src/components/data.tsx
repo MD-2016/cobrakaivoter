@@ -99,6 +99,7 @@ export const links = {
                 "friends": "Kim Sun-Yung, Tory Nichols",
                 "pic": "/resources/pictures/dojo/cobrakai/Kreese.jpg",
                 "dojo": "Cobra Kai",
+                'url': "https://thekaratekid.fandom.com/wiki/John_Kreese",
             },
             {
                 "ID": 12,
@@ -108,6 +109,7 @@ export const links = {
                 "friends": "Kim Sun-Yung, Kim Da-Eun",
                 "pic": "/resources/pictures/dojo/cobrakai/TerrySilver.jpg",
                 "dojo": "Cobra Kai",
+                'url': "https://thekaratekid.fandom.com/wiki/Terry_Silver",
             },
             {
                 "ID": 13,
@@ -117,6 +119,7 @@ export const links = {
                 "friends": "Kim Sun-Yung, John Kreese, Terry Silver, Cobra Kai",
                 "pic": "/resources/pictures/dojo/cobrakai/Kim.jpg",
                 "dojo": "Cobra Kai",
+                'url': "https://thekaratekid.fandom.com/wiki/Kim_Da-Eun",
             },
             {
                 "ID": 14,
@@ -126,6 +129,7 @@ export const links = {
                 "friends": "Kim Da-Eun, John Kreese, Terry Silver",
                 "pic": "/resources/pictures/dojo/cobrakai/MasterKim.jpg",
                 "dojo": "Cobra Kai",
+                'url': "https://thekaratekid.fandom.com/wiki/Kim_Sun-Yung",
             },
         ],
         "students": [
@@ -137,6 +141,7 @@ export const links = {
                 "friends": "Robby Keene, Devon Lee, Kyler Park, Kenny Payne, John Kreese",
                 "pic": "/resources/pictures/dojo/cobrakai/ToryNichols.jpg",
                 "dojo": "Cobra Kai",
+                'url': "https://thekaratekid.fandom.com/wiki/Tory_Nichols",
             },
             {
                 "ID": 7,
@@ -146,6 +151,7 @@ export const links = {
                 "friends": "Edwin, Tory Nichols, Kenny Payne, Terry Silver, Piper Elswith",
                 "pic": "/resources/pictures/dojo/cobrakai/Kyler.jpg",
                 "dojo": "Cobra Kai",
+                'url': "https://thekaratekid.fandom.com/wiki/Kyler_Park",
             },
             {
                 "ID": 8,
@@ -155,6 +161,7 @@ export const links = {
                 "friends": "Kyler Park, John Kreese, Terry Silver, Tory Nichols",
                 "pic": "/resources/pictures/dojo/cobrakai/Kenny.jpg",
                 "dojo": "Cobra Kai",
+                'url': "https://thekaratekid.fandom.com/wiki/Kenny_Payne",
             },
             {
                 "ID": 9,
@@ -164,6 +171,7 @@ export const links = {
                 "friends": "Kyler Park, John Kreese, Terry Silver, Big Red, Stingray, Tory Nichols, Kenny Payne",
                 "pic": "/resources/pictures/dojo/cobrakai/Edwin.jpg",
                 "dojo": "Cobra Kai",
+                'url': "https://thekaratekid.fandom.com/wiki/Edwin",
             },
             {
                 "ID": 10,
@@ -173,6 +181,7 @@ export const links = {
                 "friends": "Kyler Park, John Kreese, Terry Silver, Cobra Kai",
                 "pic": "/resources/pictures/dojo/cobrakai/Piper.jpg",
                 "dojo": "Cobra Kai",
+                'url': "https://thekaratekid.fandom.com/wiki/Piper_Elswith",
             },
 
         ],
