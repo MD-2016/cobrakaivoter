@@ -39,6 +39,7 @@ export const links = {
                 "friends": "Bobby Brown, Dutch, Jimmy, Tommy, Miguel Diaz, Daniel LaRusso, Chozen Toguchi, Miyagi-Do fighters, Eagle Fang fighters",
                 "pic": "/resources/pictures/dojo/eaglefang/Johnny.jpg",
                 "dojo": "Eagle Fang Karate",
+                'url': "https://thekaratekid.fandom.com/wiki/Johnny_Lawrence",
             },
         ],
         "students": [
@@ -50,6 +51,7 @@ export const links = {
                 "friends": "Eli Moskowitz, Demetri Alexopoulos, Johnny Lawrence, Daniel LaRusso, Samantha LaRusso, Devon Lee, Bert, Robby Keene, Tory Nichols, Chozen Toguchi",
                 "pic": "/resources/pictures/dojo/eaglefang/Miguel.jpg",
                 "dojo": "Eagle Fang Karate",
+                'url': "https://thekaratekid.fandom.com/wiki/Miguel_Diaz",
             },
             {
                 "ID": 2,
@@ -59,6 +61,7 @@ export const links = {
                 "friends": "Kyler Park, Kenny Payne, Terry Silver",
                 "pic": "/resources/pictures/dojo/eaglefang/Mitch.jpg",
                 "dojo": "Eagle Fang Karate",
+                'url': "https://thekaratekid.fandom.com/wiki/Mitch",
             },
             {
                 "ID": 3,
@@ -68,6 +71,7 @@ export const links = {
                 "friends": "Nathaniel, Eli Moskowitz, Stingray, Johnny Lawrence, Daniel LaRusso, Chozen Toguchi, Samantha LaRusso, Chris, Demetri Alexopoulos, Robby Keene, Miguel Diaz, Devon Lee",
                 "pic": "/resources/pictures/dojo/eaglefang/Bert.jpg",
                 "dojo": "Eagle Fang Karate",
+                'url': "https://thekaratekid.fandom.com/wiki/Bert",
             },
             {
                 "ID": 4,
@@ -77,6 +81,7 @@ export const links = {
                 "friends": "Johnny Lawrence, Tory Nichols, Bert, Nathaniel",
                 "pic": "/resources/pictures/dojo/eaglefang/Devon.jpg",
                 "dojo": "Eagle Fang Karate",
+                'url': "https://thekaratekid.fandom.com/wiki/Devon_Lee",
             },
             {
                 "ID": 25,
@@ -86,6 +91,7 @@ export const links = {
                 "friends": "Samantha LaRusso, Daniel LaRusso, Miguel Diaz, Eli Moskowitz, Tory Nichols",
                 "pic": "/resources/pictures/dojo/eaglefang/Aisha.jpg",
                 "dojo": "Eagle Fang Karate",
+                'url': "https://thekaratekid.fandom.com/wiki/Aisha_Robinson",
             },
         ],
     },
@@ -196,6 +202,7 @@ export const links = {
                 "friends": "Daniel LaRusso, Sato Yoguchi",
                 "pic": "/resources/pictures/dojo/miyagiDo/Miyagi.jpg",
                 "dojo": "Miyagi-Do",
+                'url': "https://thekaratekid.fandom.com/wiki/Mr._Miyagi",
             },
             {
                 "ID": 16,
@@ -205,6 +212,7 @@ export const links = {
                 "friends": "Miyagi, Chozen Toguchi, Daniel LaRusso",
                 "pic": "/resources/pictures/dojo/miyagiDo/Sato.jpg",
                 "dojo": "Miyagi-Do",
+                'url': "https://thekaratekid.fandom.com/wiki/Sato_Toguchi",
             },
             {
                 "ID": 17,
@@ -214,6 +222,7 @@ export const links = {
                 "friends": "Sato Toguchi, Daniel LaRusso, Johnny Lawrence, Miyagi-Do, Eagle Fang",
                 "pic": "/resources/pictures/dojo/miyagiDo/Chozen.jpg",
                 "dojo": "Miyagi-Do",
+                'url': "https://thekaratekid.fandom.com/wiki/Chozen_Toguchi",
             },
             {
                 "ID": 18,
@@ -223,6 +232,7 @@ export const links = {
                 "friends": "Johnny Lawrence, Samantha LaRusso, Sato Toguchi, Chozen Toguchi, Miyagi-Do, Eagle Fang",
                 "pic": "/resources/pictures/dojo/miyagiDo/Daniel.jpg",
                 "dojo": "Miyagi-Do",
+                'url': "https://thekaratekid.fandom.com/wiki/Daniel_LaRusso",
             },
         ],
         "students": [
@@ -234,6 +244,7 @@ export const links = {
                 "friends": "Aisha Robinson, Johnny Lawrence, Chozen Toguchi, Demetri Alexopoulos, Chris, Eli Moskowitz, Robby Keene, Miyagi-Do, Eagle Fang",
                 "pic": "/resources/pictures/dojo/miyagiDo/Samantha.jpg",
                 "dojo": "Miyagi-Do",
+                'url': "https://thekaratekid.fandom.com/wiki/Samantha_LaRusso",
             },
             {
                 "ID": 20,
@@ -243,6 +254,7 @@ export const links = {
                 "friends": "Demetri Alexopoulos, Miguel Diaz, Daniel LaRusso, Robby Keene, Samantha LaRusso, Tory Nichols, Chozen Toguchi, Miyagi-Do, Eagle Fang.",
                 "pic": "/resources/pictures/dojo/miyagiDo/Eli.jpg",
                 "dojo": "Miyagi-Do",
+                'url': "https://thekaratekid.fandom.com/wiki/Hawk",
             },
             {
                 "ID": 21,
@@ -251,6 +263,7 @@ export const links = {
                 "rivals": "Kyler Park, Tory Nichols, Terry Silver, John Kreese, Cobra Kai",
                 "pic": "/resources/pictures/dojo/miyagiDo/Demetri.jpg",
                 "dojo": "Miyagi-Do",
+                'url': "https://thekaratekid.fandom.com/wiki/Demetri_Alexopoulos",
             },
             {
                 "ID": 22,
@@ -260,6 +273,7 @@ export const links = {
                 "friends": "Miguel Diaz, Eli Moskowitz, Demetri Alexopoulos, Samantha LaRusso, Kenny Payne, Daniel LaRusso, Chozen Toguchi, Tory Nichols",
                 "pic": "/resources/pictures/dojo/miyagiDo/Robby.jpg",
                 "dojo": "Miyagi-Do",
+                'url': "https://thekaratekid.fandom.com/wiki/Robby_Keene",
             },
             {
                 "ID": 23,
@@ -269,6 +283,7 @@ export const links = {
                 "friends": "Demetri Alexopoulos, Nathaniel, Daniel LaRusso, Chozen Toguchi, Johnny Lawrence, Samantha LaRusso, Miguel Diaz, Eli Moskowitz, Robby Keene, Miyagi-Do, Eagle Fang",
                 "pic": "/resources/pictures/dojo/miyagiDo/Chris.jpg",
                 "dojo": "Miyagi-Do",
+                'url': "https://thekaratekid.fandom.com/wiki/Chris",
             },
             {
                 "ID": 24,
@@ -278,6 +293,7 @@ export const links = {
                 "friends": "Bert, Chris, Demetri Alexopoulos, Miyagi-Do, Eagle Fang",
                 "pic": "/resources/pictures/dojo/miyagiDo/Nate.jpg",
                 "dojo": "Miyagi-Do",
+                'url': "https://thekaratekid.fandom.com/wiki/Nathaniel",
             },
         ],
     },
@@ -290,6 +306,7 @@ export const links = {
             "friends": "Daniel LaRusso (possibly), Johnny Lawrence (possibly), Chozen Toguchi (possibly)",
             "pic": "/resources/pictures/dojo/cobrakai/MikeBarnes.jpg",
             "dojo": "Unknown",
+            'url': "https://thekaratekid.fandom.com/wiki/Mike_Barnes",
         },
     ],
 }
