@@ -1,47 +1,10 @@
 import { links } from "../../components/data";
 
-import { Box, Flex, Image, Text, Link, Spacer } from '@chakra-ui/react';
+import { Box, SimpleGrid, Image, Text, Link } from '@chakra-ui/react';
 
 const CobraKaiPage = () => {
-    /* return (
-         <Flex gap='8' alignItems='center' justify='center'>
-             <Box p='2'>
-                 <Image
-                     boxSize='144px'
-                     src={links.CK.sensei[0]?.pic}
-                     alt={links.CK.sensei[0]?.name}
-                 />
-                 <Link href="https://thekaratekid.fandom.com/wiki/John_Kreese">{links.CK.sensei[0]?.name}</Link>
-             </Box>
-             <Box p='2'>
-                 <Image
-                     boxSize='144px'
-                     src={links.CK.sensei[1]?.pic}
-                     alt={links.CK.sensei[1]?.name}
-                 />
-                 <Link href="https://thekaratekid.fandom.com/wiki/Terry_Silver">{links.CK.sensei[1]?.name}</Link>
-             </Box>
-             <Box p='2'>
-                 <Image
-                     boxSize='144px'
-                     src={links.CK.sensei[2]?.pic}
-                     alt={links.CK.sensei[2]?.name}
-                 />
-                 <Link href="https://thekaratekid.fandom.com/wiki/Kim_Da-Eun">{links.CK.sensei[2]?.name}</Link>
-             </Box>
-             <Box p='2'>
-                 <Image
-                     boxSize='144px'
-                     src={links.CK.sensei[3]?.pic}
-                     alt={links.CK.sensei[3]?.name}
-                 />
-                 <Link href="https://thekaratekid.fandom.com/wiki/Kim_Sun-Yung">{links.CK.sensei[3]?.name}</Link>
-             </Box>
-         </Flex>
-     )*/
-
-    return (
-        <Flex gap='8' alignItems='center' justify='center' flexGrow='100%'>
+    /*return (
+        <Grid templateColumns='repeat(4, 1fr)' gap={2}>
             {links.CK.sensei.map((item, i) => {
                 return (
                     <Box p='2'>
@@ -54,7 +17,7 @@ const CobraKaiPage = () => {
                     </Box>
                 )
             })}
-            <div className="break"></div>
+
             {links.CK.students.map((item, i) => {
                 return (
                     <Box p='2'>
@@ -67,7 +30,44 @@ const CobraKaiPage = () => {
                     </Box>
                 )
             })}
-        </Flex>
+        </Grid>
+    )*/
+
+    return (
+        <>
+            <SimpleGrid columns={{ sm: 1, md: 2, lg: 3, xl: 4 }} minChildWidth='140px' spacing='40px' p={3}>
+                {links.CK.sensei.map((item, i) => {
+                    return (
+                        <Box key={i}
+                            p={5}
+                        >
+                            <Image
+                                boxSize='144px'
+                                src={item.pic}
+                                alt={item.name}
+                            />
+                            <Link href={item.url}>{item.name}</Link>
+                        </Box>
+                    )
+                })}
+            </SimpleGrid >
+            <SimpleGrid columns={{ sm: 1, md: 2, lg: 3, xl: 4 }} minChildWidth='140px' spacing='40px' p={3}>
+                {links.CK.students.map((item, i) => {
+                    return (
+                        <Box key={i}
+                            p={2}
+                        >
+                            <Image
+                                boxSize='144px'
+                                src={item.pic}
+                                alt={item.name}
+                            />
+                            <Link href={item.url}>{item.name}</Link>
+                        </Box>
+                    )
+                })}
+            </SimpleGrid>
+        </>
     )
 };
 

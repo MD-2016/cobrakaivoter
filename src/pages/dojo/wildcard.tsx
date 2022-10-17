@@ -1,14 +1,14 @@
 import { links } from "../../components/data";
 
-import { Box, Flex, Image, Text, Link, Spacer } from '@chakra-ui/react';
+import { Box, SimpleGrid, Image, Text, Link } from '@chakra-ui/react';
 const WildCardPage = () => {
     return (
-        <Flex gap='8' alignItems='center' justify='center' flexGrow='100%'>
+        <SimpleGrid justifyItems='center'>
             {links.WC.map((item, i) => {
                 return (
-                    <Box p='2'>
+                    <Box p='2' key={i}>
                         <Image
-                            boxSize='144px'
+                            boxSize='500px'
                             src={item.pic}
                             alt={item.name}
                         />
@@ -16,7 +16,7 @@ const WildCardPage = () => {
                     </Box>
                 )
             })}
-        </Flex>
+        </SimpleGrid>
     )
 };
 
